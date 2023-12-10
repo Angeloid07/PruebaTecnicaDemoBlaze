@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b3babfd-7d2c-48ef-be0d-bfdedd9809ab" name="Changes" comment="Se a implementado con exito la prueba automatizada para el registro de usuarios del Scenario 1.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoblaze/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoblaze/RunnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoblaze/definitions/SignUpDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoblaze/definitions/SignUpDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoblaze/pages/validations/ValidationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoblaze/pages/validations/ValidationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoblaze/steps/validations/ValidationStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoblaze/steps/validations/ValidationStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/1-login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/1-login.feature" afterDir="false" />
-    </list>
+    <list default="true" id="5b3babfd-7d2c-48ef-be0d-bfdedd9809ab" name="Changes" comment="Se a implementado con exito la prueba automatizada para el registro de usuarios." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,11 +95,36 @@
       <option name="project" value="LOCAL" />
       <updated>1702157465632</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Se a implementado con exito la prueba automatizada para el registro de usuarios del Scenario 1.">
+      <option name="closed" value="true" />
+      <created>1702168794271</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702168794271</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Se a implementado con exito la prueba automatizada para el registro de usuarios del Scenario 1.">
+      <option name="closed" value="true" />
+      <created>1702168818220</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702168818220</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Se a implementado con exito la prueba automatizada para el registro de usuarios.">
+      <option name="closed" value="true" />
+      <created>1702168846998</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702168846998</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se a implementado con exito la prueba automatizada para el registro de usuarios del Scenario 1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Se a implementado con exito la prueba automatizada para el registro de usuarios del Scenario 1." />
+    <MESSAGE value="Se a implementado con exito la prueba automatizada para el registro de usuarios." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se a implementado con exito la prueba automatizada para el registro de usuarios." />
   </component>
 </project>
