@@ -1,6 +1,6 @@
 package com.demoblaze.definitions;
 
-import com.demoblaze.steps.signUp.SignUp;
+import com.demoblaze.steps.signUp.SignUpStep;
 import com.demoblaze.steps.validations.ValidationStep;
 import com.demoblaze.utilities.website.WebSite;
 import io.cucumber.java.en.Given;
@@ -16,7 +16,7 @@ public class SignUpDef {
     WebSite url;
 
     @Steps(shared = true)
-    SignUp signUp;
+    SignUpStep signUp;
 
     @Steps(shared = true)
     ValidationStep validate;
@@ -28,7 +28,7 @@ public class SignUpDef {
 
     //Escenario 1
 
-    @When("El usuario ingresa credenciales válidas")
+    @When("El usuario registra credenciales válidas")
     public void userSignUpWithValidateCredentials() {
 
         signUp.clickSignUpForm();
@@ -47,7 +47,7 @@ public class SignUpDef {
 
     //Segundo escenario
 
-    @When("El usuario ingresa credenciales ya existentes")
+    @When("El usuario registra credenciales ya existentes")
     public void userSignUpWithInvalidateCredentials() {
 
         signUp.clickSignUpForm();

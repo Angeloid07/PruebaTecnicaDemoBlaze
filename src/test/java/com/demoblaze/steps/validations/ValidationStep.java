@@ -14,6 +14,7 @@ import javax.swing.text.html.parser.Element;
 public class ValidationStep extends ValidationPage {
 
 
+    //sign up validations
     @Step("Validar visualizacion formulario de resgistro")
     public Boolean signUpLabelIsDisplayed() {
         try {
@@ -25,6 +26,29 @@ public class ValidationStep extends ValidationPage {
         }
 
     }
+
+    //log in validation
+    @Step("Validar visualizacion formulario de resgistro")
+    public Boolean logInLabelIsDisplayed() {
+        try {
+            boolean isDisplayed = lbl_LogIn.isDisplayed();
+            System.out.println("El elemento lbl_LogIn está visible: " + isDisplayed);
+            return isDisplayed;
+        } catch (ElementNotInteractableException e) {
+            return false;
+        }
+
+    }
+
+    @Step("Validar inicio de sesion exitoso")
+    public Boolean usernameButtonIsDisplayed(String inputUsername) {
+       String username =  btn_NameOfUser.getText().toString();
+
+        return inputUsername.equals(username);
+
+    }
+
+
 
 
 }

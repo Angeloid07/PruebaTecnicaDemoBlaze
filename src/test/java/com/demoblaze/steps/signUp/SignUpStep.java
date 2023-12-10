@@ -3,7 +3,7 @@ package com.demoblaze.steps.signUp;
 import com.demoblaze.pages.signUp.SignUpPage;
 import net.thucydides.core.annotations.Step;
 
-public class SignUp extends SignUpPage {
+public class SignUpStep extends SignUpPage {
     @Step("Ingresar usuario")
     public void typeUsername(String username){
         txt_username.sendKeys(username);
