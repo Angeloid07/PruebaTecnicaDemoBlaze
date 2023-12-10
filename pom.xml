@@ -79,7 +79,14 @@
             <scope>test</scope>
         </dependency>
 
-    </dependencies>
+
+            <dependency>
+                <groupId>net.serenity-bdd</groupId>
+                <artifactId>serenity-single-page-report</artifactId>
+                <version>${serenity.version}</version>
+            </dependency>
+        </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -129,8 +136,10 @@
                 <groupId>net.serenity-bdd.maven.plugins</groupId>
                 <artifactId>serenity-maven-plugin</artifactId>
                 <version>${serenity.version}</version>
+
                 <configuration>
                     <tags>${tags}</tags>
+                    <reports>single-page-html</reports>
                 </configuration>
                 <executions>
                     <execution>

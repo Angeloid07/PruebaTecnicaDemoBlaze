@@ -11,7 +11,7 @@ Feature: CP02 - Validar login de usuario
     Then Deberia de aparecer el nombre del usuario en la barra de navegacino de la pagina
 
   @InvalidCredentials
-  Scenario: 2 - Iniciar sesion en el sitio web con credenciales incorrectas
+  Scenario: 2 - Intentar iniciar sesion en el sitio web con credenciales incorrectas
     When El usuario ingresa credenciales incorrectas
     Then La pagina web no debería ocultar el formulario de registro
 

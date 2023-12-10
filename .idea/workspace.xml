@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b3babfd-7d2c-48ef-be0d-bfdedd9809ab" name="Changes" comment="Se a implementado con exito la prueba automatizada para el registro de usuarios.">
+    <list default="true" id="5b3babfd-7d2c-48ef-be0d-bfdedd9809ab" name="Changes" comment="SE implemento la prueba automatizada para el login del escenario 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/demoblaze/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoblaze/RunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoblaze/definitions/LogInDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoblaze/definitions/LogInDef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/demoblaze/definitions/SignUpDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoblaze/definitions/SignUpDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoblaze/pages/signUp/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoblaze/pages/login/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoblaze/pages/validations/ValidationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoblaze/pages/validations/ValidationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoblaze/steps/signUp/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoblaze/steps/signUp/SignUpStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/demoblaze/steps/validations/ValidationStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoblaze/steps/validations/ValidationStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/1-login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/1-signUp.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/1-signUp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/1-signUp.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/2-login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/2-login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +32,9 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2ZJrvYOAyL6ssT6dpgl6Ia1r5Jj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -47,6 +47,8 @@
     "JUnit.Runner.executor": "Run",
     "JUnit.RunnerTest.executor": "Run",
     "Maven.PruebaTecnicaSerenity [serenity:aggregate].executor": "Run",
+    "Maven.PruebaTecnicaSerenity [serenity:reports...].executor": "Run",
+    "Maven.PruebaTecnicaSerenity [serenity:reports].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -63,6 +65,8 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
+      <command value="mvn serenity:reports" />
+      <command value="mvn serenity:reports clean" />
       <command value="mvn serenity:aggregate" />
     </option>
   </component>
@@ -107,6 +111,13 @@
         <item itemvalue="Cucumber Java.Feature: 2-login" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-19.0.2-corretto-19.0.2-8336523bb0d9-b81783ad" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -157,12 +168,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702169111234</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="SE implemento la prueba automatizada para el login del escenario 1">
+      <option name="closed" value="true" />
+      <created>1702185060286</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702185060286</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se a implementado con exito la prueba automatizada para el registro de usuarios del Scenario 1." />
     <MESSAGE value="Se a implementado con exito la prueba automatizada para el registro de usuarios." />
-    <option name="LAST_COMMIT_MESSAGE" value="Se a implementado con exito la prueba automatizada para el registro de usuarios." />
+    <MESSAGE value="SE implemento la prueba automatizada para el login del escenario 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="SE implemento la prueba automatizada para el login del escenario 1" />
   </component>
 </project>

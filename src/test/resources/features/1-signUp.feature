@@ -7,11 +7,11 @@ Feature: CP01 - Validar registro de usuario
 
   @ValidCredentials
   Scenario: 1 - Registrarse en el sitio web con credenciales correctas
-    When El usuario registra credenciales válidas
+    When El usuario se registra con credenciales válidas
     Then la pagina web debería ocultar el formulario de registro
 
   @InvalidCredentials
   Scenario: 2 - Intentar registrarse en el sitio web con credenciales incorrectas
-    When El usuario registra credenciales ya existentes
+    When El usuario se registra con credenciales ya existentes
     Then la pagina web no debería ocultar el formulario de registro
 

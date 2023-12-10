@@ -28,7 +28,7 @@ public class ValidationStep extends ValidationPage {
     }
 
     //log in validation
-    @Step("Validar visualizacion formulario de resgistro")
+    @Step("Validar visualizacion formulario de inicio de sesion")
     public Boolean logInLabelIsDisplayed() {
         try {
             boolean isDisplayed = lbl_LogIn.isDisplayed();
@@ -42,9 +42,14 @@ public class ValidationStep extends ValidationPage {
 
     @Step("Validar inicio de sesion exitoso")
     public Boolean usernameButtonIsDisplayed(String inputUsername) {
+        try {
        String username =  btn_NameOfUser.getText().toString();
 
         return inputUsername.equals(username);
+
+        } catch (ElementNotInteractableException e) {
+            return false;
+        }
 
     }
 

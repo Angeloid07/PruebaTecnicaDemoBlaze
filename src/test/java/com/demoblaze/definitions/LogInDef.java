@@ -44,11 +44,30 @@ public class LogInDef {
     }
 
     @Then("Deberia de aparecer el nombre del usuario en la barra de navegacino de la pagina")
-    public void signUpIsNotDisplayed() throws InterruptedException {
+    public void usernameFound() throws InterruptedException {
         sleep(1000);
         String fullUsername = "Welcome " + username;
         Assert.assertTrue(validate.usernameButtonIsDisplayed(fullUsername));
     }
 
+    //Scenario 2
+
+    @When("El usuario ingresa credenciales incorrectas")
+    public void userLogInWithInvalidateCredentials() {
+
+        logIn.clickLogInForm();
+        username = "ngel07";
+        logIn.typeUsername(username);
+        logIn.typePassword("hola123");
+        logIn.clickSLogInRegister();
+
+    }
+
+    @Then("La pagina web no debería ocultar el formulario de registro")
+    public void usernameNotFound() throws InterruptedException {
+        sleep(1000);
+        String fullUsername = "Welcome " + username;
+        Assert.assertFalse(validate.usernameButtonIsDisplayed(fullUsername));
+    }
 
 }
