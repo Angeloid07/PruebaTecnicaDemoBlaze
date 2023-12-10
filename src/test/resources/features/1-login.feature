@@ -10,3 +10,8 @@ Feature: CP01 - Validar registro de usuario
     When El usuario ingresa credenciales válidas
     Then la aplicación debería ocultar el formulario de registro
 
+  @InvalidCredentials
+  Scenario: 2 - Intentar registrarse en el sitio web con credenciales incorrectas
+    When El usuario ingresa credenciales ya existentes
+    Then la aplicación no debería ocultar el formulario de registro
+

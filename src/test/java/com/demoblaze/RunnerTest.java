@@ -10,5 +10,5 @@ import org.junit.runner.RunWith;
         glue = "com.demoblaze.definitions",
         tags = "@signUp"
 )
-public class Runner {
+public class RunnerTest {
 }

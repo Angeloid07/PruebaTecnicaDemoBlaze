@@ -9,6 +9,8 @@ import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Assert;
 
+import static java.lang.Thread.sleep;
+
 public class SignUpDef {
     @Steps(shared = true)
     WebSite url;
@@ -30,20 +32,36 @@ public class SignUpDef {
     public void userSignUpWithValidateCredentials() {
 
         signUp.clickSignUpForm();
-        validate.signUpLabelIsDisplayed();
-        signUp.typeUsername("angelPrueba001");
+        Assert.assertTrue(validate.signUpLabelIsDisplayed());
+        signUp.typeUsername("angelPrueba012");
         signUp.typePassword("hola123");
         signUp.clickSignUpRegister();
     }
 
     @Then("la aplicación debería ocultar el formulario de registro")
-    public void signUpIsNotDisplayed() {
-        Assert.assertTrue(validate.namePageLabelIsDisplayed());
+    public void signUpIsNotDisplayed() throws InterruptedException {
+        sleep(400);
+        Assert.assertFalse(validate.signUpLabelIsDisplayed());
     }
-}
 
 
     //Segundo escenario
 
+    @When("El usuario ingresa credenciales ya existentes")
+    public void userSignUpWithInvalidateCredentials() {
 
+        signUp.clickSignUpForm();
+        Assert.assertTrue(validate.signUpLabelIsDisplayed());
+        signUp.typeUsername("angelPrueba012");
+        signUp.typePassword("hola123");
+        signUp.clickSignUpRegister();
 
+    }
+
+    @Then("la aplicación no debería ocultar el formulario de registro")
+    public void signUpIsVisible() throws InterruptedException {
+        sleep(400);
+        Assert.assertTrue(validate.signUpLabelIsDisplayed());
+    }
+
+}

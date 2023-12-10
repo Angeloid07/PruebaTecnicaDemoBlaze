@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b3babfd-7d2c-48ef-be0d-bfdedd9809ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="5b3babfd-7d2c-48ef-be0d-bfdedd9809ab" name="Changes" comment="Se a implementado con exito la prueba automatizada para el registro de usuarios del Scenario 1.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoblaze/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoblaze/RunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoblaze/definitions/SignUpDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoblaze/definitions/SignUpDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoblaze/pages/validations/ValidationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoblaze/pages/validations/ValidationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoblaze/steps/validations/ValidationStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoblaze/steps/validations/ValidationStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/1-login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/1-login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +43,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.Runner.executor": "Run",
+    "JUnit.RunnerTest.executor": "Run",
+    "Maven.PruebaTecnicaSerenity [serenity:aggregate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Angeloid07/IdeaProjects/PruebaTecnicaSerenity"
@@ -54,8 +59,13 @@
       <recent name="C:\Users\Angeloid07\IdeaProjects\PruebaTecnicaSerenity\src\test" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn serenity:aggregate" />
+    </option>
+  </component>
   <component name="RunManager">
-    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PruebaTecnicaSerenity" />
       <extension name="coverage">
         <pattern>
@@ -64,7 +74,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.demoblaze" />
-      <option name="MAIN_CLASS_NAME" value="com.demoblaze.Runner" />
+      <option name="MAIN_CLASS_NAME" value="com.demoblaze.RunnerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,7 +82,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Runner" />
+        <item itemvalue="JUnit.RunnerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -85,17 +95,19 @@
       <option name="presentableId" value="Default" />
       <updated>1702151257412</updated>
     </task>
+    <task id="LOCAL-00001" summary="Se a implementado con exito la prueba automatizada para el registro de usuarios del Scenario 1.">
+      <option name="closed" value="true" />
+      <created>1702157465632</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702157465632</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/demoblaze/pages/signUp/SignUpPage.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se a implementado con exito la prueba automatizada para el registro de usuarios del Scenario 1." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se a implementado con exito la prueba automatizada para el registro de usuarios del Scenario 1." />
   </component>
 </project>

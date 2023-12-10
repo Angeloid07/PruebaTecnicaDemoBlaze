@@ -10,6 +10,5 @@ public class ValidationPage extends PageObject {
     @FindBy(xpath = "//h5[text() = 'Sign up']")
     protected  WebElementFacade lbl_SignUp;
 
-    @FindBy(id = "nava")
-    protected  WebElementFacade lbl_NamePage;
+
 }
